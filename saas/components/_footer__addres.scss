@@ -1,0 +1,42 @@
+.footer__addres {
+    font-style: inherit;
+    width: 231px;
+}
+
+.footer__strit {
+    color: $primari-white-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer__contact {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.footer__mail {
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer__tell {
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer__link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    padding-top: 9px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

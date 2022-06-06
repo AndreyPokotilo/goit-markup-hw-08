@@ -1,0 +1,14 @@
+.header-line {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ECECEC;
+    top: 0px;
+    left: 0px;
+    z-index: 9;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+}
