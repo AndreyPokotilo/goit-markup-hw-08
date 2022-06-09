@@ -1,56 +1,71 @@
+ /*mobile*/
 .hero {
-    background-color: #2F303A;
-    text-align: center;
+    
+background-color: #2F303A;
+text-align: center;
+padding-top: 118px;
+padding-bottom: 118px;
+max-width: 1600px;
+margin-left: auto;
+margin-right: auto;
+background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../img/Img.jpg);
+transition-property: box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    }
+
+@media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img/Img.jpg);
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
+}
 }
 
-
-.hero__text {
-    margin-top: 0px;
-    margin-bottom: 30px;
-    color: $primari-white-color;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-
+.hero__text {   
+margin-top: 0px;
+margin-bottom: 30px;
+color: $primari-white-color;
+font-weight: 900;
+font-size: 26px;
+line-height: 1.61;
+@media screen and (min-width: 1200px){
+font-size: 44px;
+line-height: 1.4
+}
+    
 }
 
 .hero__button {
-    background-color: $accent-color;
-    color: $primari-white-color;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.2;
-    cursor: pointer;
-    padding: 10px 32px;
-    border-radius: 4px;
-    text-align: center;
-    border: none;
-    min-width: 200px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+background-color: $accent-color;
+color: $primari-white-color;
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.2;
+cursor: pointer;
+padding: 10px 32px;
+border-radius: 4px;
+text-align: center;
+border: none;
+min-width: 200px;
+height: 50px;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-            background-color: #188CE8;
-        }
+&:hover,
+&:focus {
+    background-color: #188CE8;
+        
+    }
 }
+
+
+
 

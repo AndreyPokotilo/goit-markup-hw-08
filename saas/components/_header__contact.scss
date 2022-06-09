@@ -1,49 +1,63 @@
+/*mobile*/
 .header__contact {
-    display: flex;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding: 0px;
+display: none;
+}
+/*tablet*/
 
-    & .header__site + .header__site {
+/*desctop*/
+.header__contact {
+    @media screen and (min-width: 1200px) {
+        
+        & .header__site + .header__site {
             margin-left: 50px;
         }
+        }
+    
 }
 
 .header__site {
-    position: relative;
+    @media screen and (min-width: 1200px) {
+        position: relative;
+    }
+    
 }
 
 .header__link-auth {
-    display: inline-flex;
-    align-items: center;
-    color: $text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    fill: $text-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
+        align-items: center;
+        color: $text-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        padding-top: 32px;
+        padding-bottom: 32px;
+       fill: $text-color;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus {
             color: $accent-color;
             fill: $accent-color;
         }
+    }
+    
 }
 
 .header__mail-icon {
-    margin-right: 10px;
-    fill: currentColor;
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+    
 }
 
 .header__tell-icon {
-    margin-right: 10px;
-    fill: currentColor;
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+    
 }
-
-
-

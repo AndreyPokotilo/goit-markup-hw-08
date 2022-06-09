@@ -1,14 +1,30 @@
-.header-line {
-    position: fixed;
-    width: 100%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ECECEC;
-    top: 0px;
-    left: 0px;
-    z-index: 9;
+/*mobile*/
+.haeder {
+ 
 }
 
 .header__box {
-    display: flex;
-    align-items: center;
+  @media screen and (min-width:480px) {
+    position: relative;
+  }
 }
+
+.header-line {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ECECEC;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
+}
+
+/*tablet*/
+.header__box {
+  @media screen and (min-width:768px) {
+  display: flex;
+  align-items: center;
+  }
+}
+
+/*desctop*/

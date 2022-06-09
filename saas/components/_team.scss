@@ -1,36 +1,62 @@
+/*mobile*/
 .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #F5F4FA;
-
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+    
 }
 
 .team__title {
     color: $primary-text-color;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     margin-top: 0px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.2;
     margin-bottom: 50px;
+    }
 }
 
 .team__list {
-    display: flex;
     padding-inline-start: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+    display: flex;
     & > .team__card + .team__card {
-            margin-left: 30px;
-        }
+         margin-left: 30px;
+    }   
+} 
 }
 
 .team__card {
     background-color: $primari-white-color;
     text-align: center;
-    width: 270px;
+    margin-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 2 * 30px) / 2);    
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    }
 
 }
 
@@ -39,8 +65,12 @@
 }
 
 .team__info {
+    width: 100%;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    @media screen and (min-width: 1200px){
+    padding-top: 30px;
+    padding-bottom: 30px;}
 }
 
 .team__name {
@@ -59,17 +89,21 @@
     line-height: 1.2;
     margin-top: 0px;
     margin-bottom: 16px;
-
 }
 
 .team__icon-list {
     display: flex;
     padding: 0px;
-    margin: 0px 32px 0px 32px;
+    justify-content: center;
 
-    & .team__icon+.team__icon {
+    & .team__icon + .team__icon {
         margin-left: 10px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0px 32px 0px 32px;
+    }
+
 }
 
 .team__link {
@@ -98,3 +132,8 @@
     margin: 0px;
     padding: 0px;
 }
+
+
+
+
+
