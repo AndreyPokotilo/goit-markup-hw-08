@@ -1,10 +1,8 @@
 /*mobile*/
-.haeder {
- 
-}
-
 .header__box {
-  @media screen and (min-width:480px) {
+  @media screen and (max-width:767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
     position: relative;
   }
 }
@@ -19,12 +17,11 @@
   z-index: 9;
 }
 
-/*tablet*/
 .header__box {
   @media screen and (min-width:768px) {
-  display: flex;
-  align-items: center;
-  }
+      display: flex;}
 }
 
-/*desctop*/
+
+
+
