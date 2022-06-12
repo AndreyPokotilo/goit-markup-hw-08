@@ -29,6 +29,14 @@
 }
 
 .benefits__element {
+@media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 1) {
+            margin-bottom: 0px;
+        }
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
@@ -36,10 +44,11 @@
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px;
-    }
+    
     &:nth-last-child(-n + 2) {
         margin-bottom: 0px;
     }
+}
 }
 
 .benefits__title {

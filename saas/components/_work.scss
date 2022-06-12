@@ -1,12 +1,10 @@
-/*mobile*/
+/
 .work {
-    @media screen and (max-width: 1199px) {
-            display: none;
-        }
+@media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
-/*tablet*/
 
-/*desctop*/
 .work {
     @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
@@ -32,7 +30,7 @@
         margin-bottom: 0px;
         padding-inline-start: 0px;
         
-        &>.work__foto + .work__foto {
+        & > .work__foto + .work__foto {
             margin-left: 30px;
         }
     }  
@@ -41,6 +39,8 @@
 .work__foto {
     @media screen and (min-width: 1200px) {
         position: relative;
+        width: 370px;
+        height: 294px;
     } 
 }
 

@@ -1,5 +1,4 @@
 .header__contact {
-    @media screen and (max-width: 767px){
     display: flex;
     flex-flow: column-reverse;
     margin-bottom: 64px;
@@ -8,7 +7,7 @@
     & .header__site + .header__site {
         margin-bottom: 32px;
     }
-    }
+    
     @media screen and (min-width: 768px) 
     and (max-width: 1199px) {
     display: block;
@@ -34,7 +33,6 @@
 }
 
 .header__link-auth {
-    @media screen and (max-width: 767px) {
     display: flex;
     align-items: center;
     color: $text-color;
@@ -54,7 +52,7 @@
             fill: $accent-color;
         }
 
-    }
+    
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
@@ -100,6 +98,8 @@
         display: none;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 14px;
+        height: 10px;
         margin-right: 8px;
         fill: currentColor;
     }
@@ -113,6 +113,8 @@
             display: none;
         }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 10px;
+        height: 14px;
         margin-right: 8px;
         fill: currentColor;
     }
