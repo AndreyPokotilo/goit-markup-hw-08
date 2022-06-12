@@ -922,7 +922,7 @@ body .container {
 
 @media screen and (min-width: 1200px) {
   .team__card {
-    margin-bottom: 1000px;
+    margin-bottom: 0px;
   }
 }
 
