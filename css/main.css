@@ -143,18 +143,7 @@ body .container {
   display: none;
 }
 
-.icon-close,
-.icon-menu {
-  fill: #212121;
-}
-
-.icon-close,
-.icon-menu:hover {
-  fill: #2196F3;
-}
-
-.icon-close,
-.icon-menu:focus {
+.haeder__button:hover {
   fill: #2196F3;
 }
 

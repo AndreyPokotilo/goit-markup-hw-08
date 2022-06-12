@@ -60,19 +60,8 @@ color: $primary-text-color;
     
 }
 
-.icon-close,
-.icon-menu {
-    fill: #212121;
-}
-
-.icon-close,
-.icon-menu:hover {
-    fill: $accent-color;
-}
-
-.icon-close,
-.icon-menu:focus {
-    fill: $accent-color;
+.haeder__button:hover {
+fill: $accent-color;
 }
 
 .haeder__menu {
