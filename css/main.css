@@ -92,13 +92,8 @@ body .container {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-}
-
-@media screen and (max-width: 767px) {
-  .header__logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -440,6 +435,8 @@ body .container {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__mail-icon {
+    width: 14px;
+    height: 10px;
     margin-right: 8px;
     fill: currentColor;
   }
@@ -459,6 +456,8 @@ body .container {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__tell-icon {
+    width: 10px;
+    height: 14px;
     margin-right: 8px;
     fill: currentColor;
   }
@@ -758,15 +757,12 @@ body .container {
   }
 }
 
-/*mobile*/
 @media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
 }
 
-/*tablet*/
-/*desctop*/
 @media screen and (min-width: 1200px) {
   .work {
     padding-bottom: 94px;
@@ -803,6 +799,8 @@ body .container {
 @media screen and (min-width: 1200px) {
   .work__foto {
     position: relative;
+    width: 370px;
+    height: 294px;
   }
 }
 
@@ -930,6 +928,12 @@ body .container {
   }
   .team__card:nth-last-child(-n + 2) {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card {
+    margin-bottom: 1000px;
   }
 }
 
